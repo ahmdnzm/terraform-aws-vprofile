@@ -36,3 +36,4 @@ terraform.rc
 #ssh key
 vprofilekey
 vprofilekey.pub
+.terraform.lock.hcl
