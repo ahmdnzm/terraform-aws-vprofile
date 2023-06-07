@@ -3,10 +3,10 @@ provider "aws" {
 }
 
 variable "AMIS" {
-  type = map
+  type = map(any)
   default = {
-    us-east-1 = "ami-0261755bbcb8c4a84"
-    us-east-2 = "ami-0430580de6244e02e"
+    us-east-1      = "ami-0261755bbcb8c4a84"
+    us-east-2      = "ami-0430580de6244e02e"
     ap-southeast-1 = "ami-0df7a207adb9748c7"
 
   }
@@ -21,7 +21,7 @@ variable "PUB_KEY_PATH" {
 }
 
 variable "USERNAME" {
-    default = "ubuntu"
+  default = "ubuntu"
 }
 
 variable "MYIP" {
@@ -84,14 +84,14 @@ variable "PubSub3CIDR" {
   default = "172.21.3.0/24"
 }
 
-variable "PriSub1CIDR" {
+variable "PrivSub1CIDR" {
   default = "172.21.4.0/24"
 }
 
-variable "PriSub2CIDR" {
+variable "PrivSub2CIDR" {
   default = "172.21.5.0/24"
 }
 
-variable "PriSub3CIDR" {
+variable "PrivSub3CIDR" {
   default = "172.21.6.0/24"
 }
