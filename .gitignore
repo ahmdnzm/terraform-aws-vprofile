@@ -37,3 +37,4 @@ terraform.rc
 vprofilekey
 vprofilekey.pub
 .terraform.lock.hcl
+terraform-aws-vprofile.code-workspace
